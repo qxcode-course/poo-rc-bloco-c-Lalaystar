@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_09-19-32",
+            "content": "@@ -119,25 +119,22 @@\n %0A%0Aclass \n-Mercantil\n+Onibus\n :%0A    de\n@@ -317,268 +317,40 @@\n e)%0A%0A\n-    def __str__(self):%0A        cadeiras=%22, %22.join(%5Bstr(x) if x else %22-----%22 for x in self.caixas%5D)%0A%0Adef main():%0A    mercantil=Mercantil()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()%0A%0A    if args%5B0%5D==%22show%22:%0A        print \n+david = Pessoa(%22David%22)%0Aprint(david)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-11_09-27-08",
+            "content": "@@ -419,124 +419,8 @@\n s%5D)%0A\n-        espera=%22, %22.join(%5Bstr(x) for x in self.espera%5D)%0A        return f%22Cadeiras: %5B%7Bcadeiras%7D%5D/nEspera: %5B%7Bespera%7D%5D%22\n %0Adef\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-11-11_09-32-10",
+            "content": "@@ -700,52 +700,4 @@\n int \n-(mercantil)%0A    if args%5B0%5D==%22end%22:%0A        break\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-11-11_09-33-19",
+            "content": "@@ -532,17 +532,16 @@\n pera%7D%5D%22%0A\n-%0A\n def main\n@@ -661,21 +661,9 @@\n t()%0A\n-        %0A    \n+%0A\n     \n@@ -675,19 +675,20 @@\n gs%5B0%5D==%22\n-end\n+show\n %22:%0A     \n@@ -694,22 +694,26 @@\n     \n-    break%0A    \n+print (mercantil)%0A\n     \n@@ -717,36 +717,35 @@\n    if args%5B0%5D==%22\n-show\n+end\n %22:%0A            p\n@@ -743,30 +743,9 @@\n     \n-    print (mercantil)%0A    \n+break\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-11-11_09-34-29",
+            "content": "@@ -514,9 +514,9 @@\n as%7D%5D\n-%5C\n+/\n nEsp\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-11_09-36-09",
+            "content": "@@ -778,11 +778,4 @@\n     \n-%0Amain()\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-11_09-36-51",
+            "content": "@@ -573,9 +573,8 @@\n til(\n-5\n )%0A  \n@@ -774,17 +774,8 @@\n il)%0A\n-       %0A%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-11_09-41-49",
+            "content": "@@ -573,9 +573,9 @@\n til(\n-2\n+5\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-11_09-42-11",
+            "content": "@@ -490,18 +490,20 @@\n urn f%22Ca\n-ix\n+deir\n as: %5B%7Bca\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-11_09-42-25",
+            "content": "@@ -1,20 +1,20 @@\n class Pe\n-rson\n+ssoa\n :%0A    de\n@@ -120,19 +120,24 @@\n %0Aclass M\n-ark\n+ercantil\n :%0A    de\n@@ -194,20 +194,20 @@\n :list%5BPe\n-rson\n+ssoa\n %5D=%5B%5D%0A   \n@@ -230,20 +230,20 @@\n :list%5BPe\n-rson\n+ssoa\n %7CNone%5D=%5B\n@@ -320,81 +320,8 @@\n e)%0A%0A\n-    def arrive(self, pessoa:Person):%0A        self.espera.append(pessoa)%0A%0A\n     \n@@ -552,16 +552,26 @@\n    m\n-ark=Mark\n+ercantil=Mercantil\n (2)%0A\n@@ -763,68 +763,26 @@\n t (m\n-ark)%0A        if args%5B0%5D==%22arrive%22:%0A            mark.arrive()\n+ercantil)%0A       %0A\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-11_09-50-32",
+            "content": "@@ -880,20 +880,8 @@\n ive(\n-str(args%5B1%5D)\n )%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-11_09-54-10",
+            "content": "class Person:\n    def __init__(self, nome:str):\n        self.nome=nome\n    def __str__(self):\n        return self.nome\n\nclass Mark:\n    def __init__(self,n_caixas:int):\n        self.espera:list[Person]=[]\n        self.caixas:list[Person|None]=[]\n        for _ in range(n_caixas):\n            self.caixas.append(None)\n\n    def arrive(self, pessoa:Person):\n        self.espera.append(pessoa)\n\n    def __str__(self):\n        cadeiras=\", \".join([str(x) if x else \"-----\" for x in self.caixas])\n        espera=\", \".join([str(x) for x in self.espera])\n        return f\"Caixas: [{cadeiras}]\\nEspera: [{espera}]\"\n\ndef main():\n    mark=Mark(2)\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n        \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print (mark)\n        if args[0]==\"arrive\":\n            mark.arrive(str(args[1]))\n    \nmain()",
+            "lines": "36"
+        }
+    ]
+}
