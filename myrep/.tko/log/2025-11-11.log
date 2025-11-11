@@ -1,0 +1,3 @@
+2025-11-11 08:55:45, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-11 09:07:37, EXEC, v:1, k:poo@array, mode:FREE, size:9
+2025-11-11 09:09:57, EXEC, v:1, k:poo@array, mode:FREE, size:12

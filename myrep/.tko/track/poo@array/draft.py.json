@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_09-07-37",
+            "content": "@@ -149,56 +149,23 @@\n %5D%0A%0Af\n-2=%5B%5D%0Ap=input()%0Afor x in frutas:%0A    f2.append(p)\n+or x in frutas:\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-11_09-09-57",
+            "content": "class Foo:\n    def __init__(self, name:str):\n        self.name=name\n\nfrutas:list[str]=[\"banana\", \"uva\"]\ncoisas:list[Foo]=[Foo(\"Maria\"), Foo(\"Joana\")]\n\nf2=[]\np=input()\nfor x in frutas:\n    f2.append(p)\n    print(x)",
+            "lines": "12"
+        }
+    ]
+}
