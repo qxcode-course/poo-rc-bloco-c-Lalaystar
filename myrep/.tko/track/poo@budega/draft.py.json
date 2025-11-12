@@ -57,8 +57,108 @@
         },
         {
             "label": "2025-11-11_09-54-10",
-            "content": "class Person:\n    def __init__(self, nome:str):\n        self.nome=nome\n    def __str__(self):\n        return self.nome\n\nclass Mark:\n    def __init__(self,n_caixas:int):\n        self.espera:list[Person]=[]\n        self.caixas:list[Person|None]=[]\n        for _ in range(n_caixas):\n            self.caixas.append(None)\n\n    def arrive(self, pessoa:Person):\n        self.espera.append(pessoa)\n\n    def __str__(self):\n        cadeiras=\", \".join([str(x) if x else \"-----\" for x in self.caixas])\n        espera=\", \".join([str(x) for x in self.espera])\n        return f\"Caixas: [{cadeiras}]\\nEspera: [{espera}]\"\n\ndef main():\n    mark=Mark(2)\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n        \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print (mark)\n        if args[0]==\"arrive\":\n            mark.arrive(str(args[1]))\n    \nmain()",
+            "content": "@@ -388,98 +388,8 @@\n a)%0A%0A\n-    def call(self,index:int):%0A        self.caixas%5Bindex%5D=None%0A        del self.espera%5B0%5D%0A%0A\n     \n@@ -894,37 +894,8 @@\n %5D))%0A\n-        if args%5B0%5D==%22call%22:%0A%0A\n     \n",
             "lines": "36"
+        },
+        {
+            "label": "2025-11-12_10-39-41",
+            "content": "@@ -1012,31 +1012,8 @@\n l%22:%0A\n-            mark.call()\n %0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-40-12",
+            "content": "@@ -1030,28 +1030,16 @@\n rk.call(\n-str(args%5B1%5D)\n )%0A    %0Am\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-40-40",
+            "content": "@@ -441,30 +441,20 @@\n %5Bindex%5D=\n-self.espera%5B0%5D\n+None\n %0A       \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-42-19",
+            "content": "@@ -1040,16 +1040,28 @@\n rk.call(\n+str(args%5B1%5D)\n )%0A    %0Am\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-42-37",
+            "content": "@@ -1044,20 +1044,8 @@\n all(\n-int(args%5B1%5D)\n )%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-42-59",
+            "content": "@@ -486,140 +486,8 @@\n a%5B0%5D\n-%0A    %0A    def finish(self,index:int)-%3EPerson%7CNone:%0A        aux=self.caixas%5Bindex%5D%0A        self.caixas%5Bindex%5D=None%0A        return aux\n %0A%0A  \n@@ -1058,76 +1058,8 @@\n %5D))%0A\n-        if args%5B0%5D==%22finish%22:%0A            mark.finish(str(args%5B1%5D))%0A\n     \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-12_10-47-23",
+            "content": "@@ -1240,24 +1240,28 @@\n .finish(\n+str(\n args%5B1%5D)\n %0A    %0Ama\n@@ -1252,16 +1252,17 @@\n args%5B1%5D)\n+)\n %0A    %0Ama\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-12_10-47-38",
+            "content": "@@ -1240,16 +1240,23 @@\n .finish(\n+args%5B1%5D\n )%0A    %0Am\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-12_10-47-47",
+            "content": "@@ -1240,28 +1240,16 @@\n .finish(\n-str(args%5B1%5D)\n )%0A    %0Am\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-12_10-48-20",
+            "content": "@@ -1240,19 +1240,19 @@\n .finish(\n-int\n+str\n (args%5B1%5D\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-12_10-48-40",
+            "content": "@@ -1058,72 +1058,8 @@\n rk)%0A\n-        if args%5B0%5D==%22init%22:%0A            mark=Mark(int(args%5B1%5D))%0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-12_11-03-18",
+            "content": "@@ -418,188 +418,8 @@\n t):%0A\n-        if index%3C0 or index%3Elen(self.caixas):%0A            print(%22fail: index invalido%22)%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22fail: caixa ocupado%22)   %0A    %0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-12_11-08-40",
+            "content": "@@ -502,35 +502,16 @@\n alido%22)%0A\n-            return%0A\n         \n@@ -590,117 +590,10 @@\n o%22) \n-%0A\n   \n-          return%0A        if len(self.espera)==0:%0A            print(%22ninguem esperando%22)%0A            return\n %0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-12_11-11-14",
+            "content": "@@ -680,26 +680,25 @@\n nt(%22\n-fail: sem clientes\n+ninguem esperando\n %22)%0A \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_11-12-50",
+            "content": "@@ -873,10 +873,8 @@\n ndex\n--1\n %5D%0A  \n@@ -1620,16 +1620,17 @@\n nt(args%5B\n+1\n %5D))%0A    \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_11-17-09",
+            "content": "@@ -1614,32 +1614,31 @@\n finish(int(args%5B\n-1\n %5D))%0A    %0Amain()\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_11-17-36",
+            "content": "@@ -434,33 +434,32 @@\n ndex%3C0 or index%3E\n-=\n len(self.caixas)\n@@ -844,231 +844,8 @@\n ne:%0A\n-        if index%3C0 or index%3E=len(self.caixas):%0A            print(%22fail: index invalido%22)%0A            return None%0A        if self.caixas is None:%0A            print(%22fail: caixa inexistente%22)%0A            return None%0A        %0A\n     \n@@ -869,16 +869,18 @@\n as%5Bindex\n+-1\n %5D%0A      \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_11-31-24",
+            "content": "@@ -917,25 +917,22 @@\n il: \n-caixa inexistente\n+index invalido\n %22)%0A \n@@ -1006,39 +1006,42 @@\n print(%22fail:\n+ caixa\n  in\n-d\n ex\n- invalido\n+istente\n %22)%0A         \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-12_11-32-07",
+            "content": "@@ -975,31 +975,24 @@\n  self.caixas\n-%5Bindex%5D\n  is None:%0A  \n@@ -1018,18 +1018,21 @@\n il: \n-caixa vazi\n+index invalid\n o%22)%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-12_11-36-25",
+            "content": "class Person:\n    def __init__(self, nome:str):\n        self.nome=nome\n    def __str__(self):\n        return self.nome\n\nclass Mark:\n    def __init__(self,n_caixas:int):\n        self.espera:list[Person]=[]\n        self.caixas:list[Person|None]=[]\n        for _ in range(n_caixas):\n            self.caixas.append(None)\n\n    def arrive(self, pessoa:Person):\n        self.espera.append(pessoa)\n\n    def call(self,index:int):\n        if index<0 or index>=len(self.caixas):\n            print(\"fail: index invalido\")\n            return\n        if self.caixas[index] is not None:\n            print(\"fail: caixa ocupado\") \n            return\n        if len(self.espera)==0:\n            print(\"fail: sem clientes\")\n            return\n    \n        self.caixas[index]=self.espera[0]\n        del self.espera[0]\n    \n    def finish(self,index:int)->Person|None:\n        if index<0 or index>=len(self.caixas):\n            print(\"fail: caixa inexistente\")\n            return None\n        if self.caixas[index] is None:\n            print(\"fail: caixa vazio\")\n            return None\n        \n        aux=self.caixas[index]\n        self.caixas[index]=None\n        return aux\n\n    def __str__(self):\n        cadeiras=\", \".join([str(x) if x else \"-----\" for x in self.caixas])\n        espera=\", \".join([str(x) for x in self.espera])\n        return f\"Caixas: [{cadeiras}]\\nEspera: [{espera}]\"\n\ndef main():\n    mark=Mark(2)\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n        \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print (mark)\n        if args[0]==\"init\":\n            mark=Mark(int(args[1]))\n        if args[0]==\"arrive\":\n            mark.arrive(str(args[1]))\n        if args[0]==\"call\":\n            mark.call(int(args[1]))\n        if args[0]==\"finish\":\n            mark.finish(int(args[1]))\n    \nmain()",
+            "lines": "68"
         }
     ]
 }

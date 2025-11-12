@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-11-11_09-09-57",
-            "content": "class Foo:\n    def __init__(self, name:str):\n        self.name=name\n\nfrutas:list[str]=[\"banana\", \"uva\"]\ncoisas:list[Foo]=[Foo(\"Maria\"), Foo(\"Joana\")]\n\nf2=[]\np=input()\nfor x in frutas:\n    f2.append(p)\n    print(x)",
+            "content": "@@ -144,16 +144,22 @@\n ana%22)%5D%0A%0A\n+f2=%5B%5D%0A\n p=input(\n@@ -182,21 +182,17 @@\n s:%0A    f\n-rutas\n+2\n .append(\n@@ -206,9 +206,8 @@\n print(x)\n-%0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-11-11_09-56-27",
+            "content": "class Foo:\n    def __init__(self, name:str):\n        self.name=name\n\nfrutas:list[str]=[\"banana\", \"uva\"]\ncoisas:list[Foo]=[Foo(\"Maria\"), Foo(\"Joana\")]\n\np=input()\nfor x in frutas:\n    frutas.append(p)\n    print(x)\n",
+            "lines": "11"
         }
     ]
 }
