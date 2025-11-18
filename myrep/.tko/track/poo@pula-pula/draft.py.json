@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-12_11-50-05",
+            "content": "@@ -1,69 +0,0 @@\n-class Kid:%0A    def __init__(self,age:int,name:str):%0A        %0A        \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-15_17-54-40",
+            "content": "@@ -57,162 +57,13 @@\n     \n-self.__age=age%0A        self.__name=name%0A    %0A    def getAge(self):%0A        return self.__age%0A    %0A    def getName(self):%0A        return self.__name%0A    %0A    %0A\n+%0A        \n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-15_18-14-59",
+            "content": "class Kid:\n    def __init__(self,age:int,name:str):\n        self.__age=age\n        self.__name=name\n    \n    def getAge(self):\n        return self.__age\n    \n    def getName(self):\n        return self.__name\n    \n    \n",
+            "lines": "12"
+        }
+    ]
+}

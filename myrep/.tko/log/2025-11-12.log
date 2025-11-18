@@ -26,3 +26,5 @@
 2025-11-12 11:37:30, MOVE, v:1, k:poo@budega, mode:BACK
 2025-11-12 11:40:35, SELF, v:1, k:poo@budega, rate:100, human:amigo_discutindo_codigo, iagen:gpt_para_explicar_os_erros, guide:video_do_professor, alone:8
 2025-11-12 11:42:20, SELF, v:1, k:poo@budega, rate:100, human:amigo_discutindo_codigo, guide:video_do_professor, alone:10, study:90
+2025-11-12 11:50:02, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:50:05, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:0
