@@ -16,7 +16,7 @@ class Kid:
         self.__age=age
 
     def __repr__(self):
-        return str(self)
+        return f"{self.__name}:{self.__age}"
     
     def __str__(self):
         return f"{self.__name}:{self.__age}"
@@ -27,11 +27,18 @@ class Pula:
         self.la:list[Kid]=[]
         
     def arrive(self, name: str, age: int):
-        self.espera.append(Kid(name, age))
+        self.espera.insert(0, Kid(name, age))
 
     def enter(self):
         if self.espera:
-            self.la.append(self.espera.pop(0))
+           self.la.insert(0, self.espera.pop())
+
+
+    def leave(self):
+        if self.la:
+            kid=self.la.pop(0)
+            self.espera.append(kid)
+        
 
     def __str__(self):
         return f"{self.espera} => {self.la}"
@@ -44,6 +51,7 @@ def main():
         args=line.split()
 
         if args[0]=="end":
+
             break
         elif args[0]=="show":
             print(pula)
@@ -53,6 +61,9 @@ def main():
             pula.arrive(name,age)
         elif args[0]=="enter":
             pula.enter()
+        elif args[0]=="leave":
+            pula.leave()
+
 main()
         
    

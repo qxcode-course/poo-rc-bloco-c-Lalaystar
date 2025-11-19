@@ -117,8 +117,43 @@
         },
         {
             "label": "2025-11-18_22-22-45",
-            "content": "class Kid:\n    def __init__(self,name:str, age:int):\n        self.__age=age\n        self.__name=name\n\n    def getName(self)->str:\n        return self.__name\n    \n    def getAge(self)->int:\n        return self.__age\n    \n    def setName(self, name:str):\n        self.__name=name\n\n    def setAge(self, age:int):\n        self.__age=age\n\n    def __repr__(self):\n        return str(self)\n    \n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \nclass Pula:\n    def __init__(self):\n        self.espera:list[Kid]=[]\n        self.la:list[Kid]=[]\n        \n    def arrive(self, name: str, age: int):\n        self.espera.append(Kid(name, age))\n\n    def enter(self):\n        if self.espera:\n            self.la.append(self.espera.pop(0))\n\n    def __str__(self):\n        return f\"{self.espera} => {self.la}\"\n\ndef main():\n    pula=Pula()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"show\":\n            print(pula)\n        elif args[0]==\"arrive\":\n            name=args[1]\n            age=int(args[2])\n            pula.arrive(name,age)\n        elif args[0]==\"enter\":\n            pula.enter()\nmain()\n        \n   ",
+            "content": "@@ -745,31 +745,8 @@\n ))%0A%0A\n-    def leave(self):%0A%0A%0A\n     \n@@ -957,21 +957,8 @@\n d%22:%0A\n-            %0A\n     \n@@ -1201,17 +1201,16 @@\n enter()%0A\n-%0A\n main()%0A \n",
             "lines": "58"
+        },
+        {
+            "label": "2025-11-19_11-35-04",
+            "content": "@@ -745,16 +745,33 @@\n ))%0A%0A    \n+def leave(self):%0A\n %0A%0A    de\n@@ -976,16 +976,28 @@\n =%22end%22:%0A\n+            \n %0A       \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-19_11-42-04",
+            "content": "@@ -749,120 +749,8 @@\n     \n-def leave(self):%0A        if self.la:%0A            kid=self.la.pop(0)%0A            self.espera.append(kid)%0A        \n %0A%0A  \n@@ -1211,64 +1211,8 @@\n er()\n-%0A        elif args%5B0%5D==%22leave%22:%0A            pula.leave()\n %0A%0Ama\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-19_11-46-23",
+            "content": "@@ -370,37 +370,17 @@\n urn \n-f%22%7Bself.__name%7D:%7Bself.__age%7D%22\n+str(self)\n %0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-51-00",
+            "content": "@@ -648,18 +648,15 @@\n era.\n-insert(0, \n+append(\n Kid(\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-53-27",
+            "content": "@@ -763,11 +763,11 @@\n pop(\n+0\n ))\n- \n %0A%0A  \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-54-34",
+            "content": "@@ -727,24 +727,25 @@\n         \n+ \n self.la.\n insert(0\n@@ -736,26 +736,23 @@\n self.la.\n-insert(0, \n+append(\n self.esp\n@@ -761,17 +761,17 @@\n a.pop())\n-%0A\n+ \n %0A%0A    de\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-56-47",
+            "content": "class Kid:\n    def __init__(self,name:str, age:int):\n        self.__age=age\n        self.__name=name\n\n    def getName(self)->str:\n        return self.__name\n    \n    def getAge(self)->int:\n        return self.__age\n    \n    def setName(self, name:str):\n        self.__name=name\n\n    def setAge(self, age:int):\n        self.__age=age\n\n    def __repr__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \nclass Pula:\n    def __init__(self):\n        self.espera:list[Kid]=[]\n        self.la:list[Kid]=[]\n        \n    def arrive(self, name: str, age: int):\n        self.espera.insert(0, Kid(name, age))\n\n    def enter(self):\n        if self.espera:\n           self.la.insert(0, self.espera.pop())\n\n\n    def leave(self):\n        if self.la:\n            kid=self.la.pop(0)\n            self.espera.append(kid)\n        \n\n    def __str__(self):\n        return f\"{self.espera} => {self.la}\"\n\ndef main():\n    pula=Pula()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n\n        if args[0]==\"end\":\n\n            break\n        elif args[0]==\"show\":\n            print(pula)\n        elif args[0]==\"arrive\":\n            name=args[1]\n            age=int(args[2])\n            pula.arrive(name,age)\n        elif args[0]==\"enter\":\n            pula.enter()\n        elif args[0]==\"leave\":\n            pula.leave()\n\nmain()\n        \n   ",
+            "lines": "69"
         }
     ]
 }
