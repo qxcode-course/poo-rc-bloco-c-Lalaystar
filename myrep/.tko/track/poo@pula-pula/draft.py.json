@@ -12,8 +12,103 @@
         },
         {
             "label": "2025-11-15_18-14-59",
-            "content": "class Kid:\n    def __init__(self,age:int,name:str):\n        self.__age=age\n        self.__name=name\n    \n    def getAge(self):\n        return self.__age\n    \n    def getName(self):\n        return self.__name\n    \n    \n",
+            "content": "@@ -101,19 +101,23 @@\n     \n-def __str__\n+%0A    def getAge\n (sel\n@@ -120,32 +120,39 @@\n (self):%0A        \n+return \n self.__age%0A     \n@@ -150,31 +150,39 @@\n age%0A    \n+%0A\n     \n-self.__name\n+def getName(self):\n %0A       \n@@ -192,24 +192,25 @@\n turn\n-%0A    %0A%0A%0A    \n+ self.__name%0A\n     %0A   \n@@ -197,20 +197,22 @@\n self.__name%0A    %0A   \n+ %0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-11-18_21-22-14",
+            "content": "@@ -30,16 +30,24 @@\n elf,\n+age:int,\n name:str\n , ag\n@@ -46,17 +46,8 @@\n :str\n-, age:int\n ):%0A \n@@ -179,373 +179,9 @@\n    %0A\n-class Pula:%0A    def __init__(self,temgente:int):%0A        self.espera:list%5BKid%5D=%5B%5D%0A        self.gente:list%5BKid%7CNone%5D=%5B%5D%0A        for _ in range(temgente):%0A            self.gente.append(None)%0A%0A%0Adef main():%0A    pula=Pula()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()%0A%0A        if args%5B0%5D==%22show%22:%0A            print(pula)%0Amain()\n+%0A\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-18_21-31-04",
+            "content": "@@ -370,72 +370,8 @@\n e)%0A%0A\n-    def arrive(self, kid=Kid):%0A        self.espera.append(kid)%0A%0A\n %0Adef\n@@ -487,53 +487,8 @@\n ()%0A%0A\n-        if args%5B0%5D==%22end%22:%0A            break%0A\n     \n@@ -535,25 +535,16 @@\n t(pula)%0A\n-        %0A\n main()%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-18_21-34-33",
+            "content": "@@ -301,16 +301,79 @@\n %5D%0A      \n+  for _ in range(temgente):%0A            self.gente.append(None)\n %0A%0A    de\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-18_21-34-43",
+            "content": "@@ -174,34 +174,8 @@\n turn\n- f%22%7Bself.name%7D:%7Bself.age%7D%22\n %0A   \n@@ -205,24 +205,37 @@\n _init__(self\n+,temgente:int\n ):%0A        s\n@@ -271,18 +271,21 @@\n    self.\n-la\n+gente\n :list%5BKi\n@@ -301,18 +301,16 @@\n %5D%0A      \n-  \n %0A%0A    de\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-18_21-38-21",
+            "content": "@@ -605,62 +605,8 @@\n     \n-if args%5B0%5D==%22arrive%22:%0A            pula.arrive(args%5B1%5D)\n %0Amai\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-18_21-39-13",
+            "content": "@@ -651,20 +651,16 @@\n ive(\n-str(\n args%5B1%5D)\n )%0Ama\n@@ -655,17 +655,16 @@\n args%5B1%5D)\n-)\n %0Amain()%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-18_21-39-32",
+            "content": "@@ -383,78 +383,8 @@\n d)%0A%0A\n-    def __str__(self):%0A        return f%22%7Bself.espera%7D =%3E %7Bself.pula%7D%22%0A\n %0Adef\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-18_21-41-38",
+            "content": "@@ -442,16 +442,18 @@\n %3E %7Bself.\n+pu\n la%7D%22%0A%0Ade\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-18_21-42-01",
+            "content": "@@ -719,16 +719,20 @@\n ive(\n+str(\n args%5B1%5D)\n %0Amai\n@@ -727,16 +727,17 @@\n args%5B1%5D)\n+)\n %0Amain()%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-18_21-42-46",
+            "content": "@@ -380,33 +380,8 @@\n (kid\n-(self.__name, self.__age)\n )%0A%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-18_21-44-08",
+            "content": "@@ -175,26 +175,24 @@\n urn f%22%7Bself.\n-__\n name%7D:%7Bself.\n@@ -191,18 +191,16 @@\n %7D:%7Bself.\n-__\n age%7D%22%0A  \n@@ -381,13 +381,31 @@\n kid(\n-name,\n+self.__name, self.__age\n ))%0A%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-18_21-46-27",
+            "content": "@@ -291,32 +291,37 @@\n self.la:list%5BKid\n+%7CNone\n %5D=%5B%5D%0A        %0A  \n@@ -318,16 +318,17 @@\n        %0A\n+%0A\n     def \n@@ -344,27 +344,15 @@\n lf, \n-name: str, age: int\n+kid=Kid\n ):%0A \n@@ -381,17 +381,17 @@\n end(\n-K\n+k\n id(name,\n  age\n@@ -386,20 +386,16 @@\n id(name,\n- age\n ))%0A%0A    \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-18_21-48-02",
+            "content": "@@ -94,25 +94,24 @@\n me=name%0A\n-%0A\n     def \n getName(\n@@ -106,85 +106,21 @@\n def \n-getName(self)-%3Estr:%0A        return self.__name%0A    %0A    def getAge\n+__str__\n (self)\n--%3Eint\n :%0A  \n@@ -125,23 +125,16 @@\n         \n-return \n self.__a\n@@ -140,39 +140,31 @@\n age%0A    \n-%0A\n     \n-def __str__(self):\n+self.__name\n %0A       \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-18_21-56-26",
+            "content": "@@ -808,82 +808,27 @@\n     \n-name=args%5B1%5D%0A            age=args%5B2%5D%0A            pula.arrive(Kid(name,age)\n+pula.arrive(args%5B1%5D\n )%0Ama\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-18_21-58-56",
+            "content": "@@ -865,16 +865,20 @@\n .arrive(\n+Kid(\n name,age\n@@ -878,16 +878,17 @@\n ame,age)\n+)\n %0Amain()%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-18_22-00-31",
+            "content": "@@ -217,126 +217,8 @@\n    %0A\n-    def setName(self, name:str):%0A        self.__name=name%0A%0A    def setAge(self, age:int):%0A        self.__age=age%0A    %0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-18_22-02-45",
+            "content": "@@ -955,20 +955,15 @@\n age=\n-int(\n args%5B2%5D\n-)\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-18_22-03-34",
+            "content": "@@ -329,58 +329,8 @@\n =age\n-%0A%0A    def __repr__(self):%0A        return str(self)\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-18_22-06-26",
+            "content": "class Kid:\n    def __init__(self,name:str, age:int):\n        self.__age=age\n        self.__name=name\n\n    def getName(self)->str:\n        return self.__name\n    \n    def getAge(self)->int:\n        return self.__age\n    \n    def setName(self, name:str):\n        self.__name=name\n\n    def setAge(self, age:int):\n        self.__age=age\n\n    def __repr__(self):\n        return str(self)\n    \n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \nclass Pula:\n    def __init__(self):\n        self.espera:list[Kid]=[]\n        self.la:list[Kid]=[]\n        \n    def arrive(self, name: str, age: int):\n        self.espera.append(Kid(name, age))\n\n    def __str__(self):\n        return f\"{self.espera} => {self.la}\"\n\ndef main():\n    pula=Pula()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n\n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(pula)\n        if args[0]==\"arrive\":\n            name=args[1]\n            age=int(args[2])\n            pula.arrive(name,age)\nmain()\n        \n   ",
+            "lines": "52"
         }
     ]
 }
