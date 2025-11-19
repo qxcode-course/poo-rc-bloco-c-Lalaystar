@@ -12,8 +12,23 @@
         },
         {
             "label": "2025-11-11_09-56-27",
-            "content": "class Foo:\n    def __init__(self, name:str):\n        self.name=name\n\nfrutas:list[str]=[\"banana\", \"uva\"]\ncoisas:list[Foo]=[Foo(\"Maria\"), Foo(\"Joana\")]\n\np=input()\nfor x in frutas:\n    frutas.append(p)\n    print(x)\n",
+            "content": "@@ -31,14 +31,16 @@\n lf, \n-x: int\n+name:str\n ):%0A \n@@ -55,139 +55,61 @@\n elf.\n-x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alistav: list%5Bint%5D = %5B%5D%0Alistap: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alistapo: \n+name=name%0A%0Afrutas:list%5Bstr%5D=%5B%22banana%22, %22uva%22%5D%0Acoisas:\n list\n@@ -117,91 +117,96 @@\n Foo%5D\n- = \n+=\n %5BFoo(\n-1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alistav.append(1)%0Alistapo.append(Foo(6))%0A%0A\n+%22Maria%22), Foo(%22Joana%22)%5D%0A%0Ap=input()%0Afor x in frutas:%0A    frutas.append(p)%0A    print(x)\n %0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2025-11-18_20-08-31",
+            "content": "@@ -31,16 +31,14 @@\n lf, \n-name:str\n+x: int\n ):%0A \n@@ -53,61 +53,139 @@\n elf.\n-name=name%0A%0Afrutas:list%5Bstr%5D=%5B%22banana%22, %22uva%22%5D%0Acoisas:\n+x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alistav: list%5Bint%5D = %5B%5D%0Alistap: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alistapo: \n list\n@@ -193,81 +193,91 @@\n Foo%5D\n-=\n+ = \n %5BFoo(\n-%22Maria%22), Foo(%22Joana%22)%5D%0A%0Alista_vazia=list%5Bint%5D=%5B%5D%0A%0Atam=len(lista_vazia)\n+1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alistav.append(1)%0Alistapo.append(Foo(6))%0A%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-18_20-11-57",
+            "content": "@@ -148,493 +148,50 @@\n )%5D%0A%0A\n-frutas.append(%22ma%C3%A7a%22)%0Afrutas.pop(1)%0A%0Afrutas.insert(1,%22pera%22)%0A%0A#n=int(input())%0A#bixa=list(range(n+1))%0A%0Atam=len(frutas)%0A%0A#for x in range(n):%0A  #  print(x)%0A%0Abixa2:list%5Bint%5D=%5B1,2,3,4,5,6,7,8,9,10%5D%0A#print(5 in bixa2)%0A#x=9%0A###%0A# encontrado = False%0A#for elemento in bixa2:%0A #   if elemento == x:%0A  #      encontrado = True%0A   #     break%0A    #print(encontrado)%0A#par=%5Bx for x in bixa2 if x%252==0%5D%0A#quadrado=%5Bx*x for x in bixa2%5D%0A#print(quadrado)%0A%0Ax=7%0Afor x in bixa2:%0A    bixa2.remove(x)%0Aprint(bixa2\n+lista_vazia=list%5Bint%5D=%5B%5D%0A%0Atam=len(lista_vazia\n )\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-18_21-00-31",
+            "content": "class Foo:\n    def __init__(self, name:str):\n        self.name=name\n\nfrutas:list[str]=[\"banana\", \"uva\"]\ncoisas:list[Foo]=[Foo(\"Maria\"), Foo(\"Joana\")]\n\nfrutas.append(\"ma\u00e7a\")\nfrutas.pop(1)\n\nfrutas.insert(1,\"pera\")\n\n#n=int(input())\n#bixa=list(range(n+1))\n\ntam=len(frutas)\n\n#for x in range(n):\n  #  print(x)\n\nbixa2:list[int]=[1,2,3,4,5,6,7,8,9,10]\n#print(5 in bixa2)\n#x=9\n###\n# encontrado = False\n#for elemento in bixa2:\n #   if elemento == x:\n  #      encontrado = True\n   #     break\n    #print(encontrado)\n#par=[x for x in bixa2 if x%2==0]\n#quadrado=[x*x for x in bixa2]\n#print(quadrado)\n\nx=7\nfor x in bixa2:\n    bixa2.remove(x)\nprint(bixa2)",
+            "lines": "38"
         }
     ]
 }

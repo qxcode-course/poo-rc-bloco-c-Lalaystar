@@ -1,0 +1,7 @@
+2025-11-18 20:07:07, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-18 20:08:31, EXEC, v:1, k:poo@array, mode:FREE, size:15
+2025-11-18 20:11:57, EXEC, v:1, k:poo@array, mode:FREE, size:10
+2025-11-18 21:00:31, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:38
+2025-11-18 21:00:32, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-18 21:01:36, SELF, v:1, k:poo@array, rate:80, guide:video_da_aula, alone:10, study:110
+2025-11-18 21:01:50, SELF, v:1, k:poo@array, rate:90, guide:video_da_aula, alone:10, study:110

@@ -12,13 +12,14 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-11-15 14:18:40'
+  cache_timestamp: '2025-11-18 20:04:38'
   filters:
   - listas
 expanded:
 - poo@campanha-principal
 - poo@bloco_c-listas
 tasks:
+  poo@array: '{rate:90, guide:video_da_aula, alone:10, study:110}'
   poo@budega: '{rate:100, human:amigo_discutindo_codigo, guide:video_do_professor,
     alone:10, study:90}'
 flags:
@@ -28,4 +29,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@pula-pula
+selected: poo@array
