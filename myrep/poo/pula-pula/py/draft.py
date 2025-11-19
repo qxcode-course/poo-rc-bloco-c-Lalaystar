@@ -36,8 +36,8 @@ class Pula:
 
     def leave(self):
         if self.la:
-            kid=self.la.pop(0)
-            self.espera.append(kid)
+            kid = self.la.pop()          
+            self.espera.insert(0, kid)
         
 
     def __str__(self):

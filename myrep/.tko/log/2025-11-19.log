@@ -7,3 +7,11 @@
 2025-11-19 11:54:34, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:68
 2025-11-19 11:56:48, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:60, size:69
 2025-11-19 11:57:06, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-19 12:03:07, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-19 12:03:11, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:60
+2025-11-19 12:06:27, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-19 12:06:49, SELF, v:1, k:poo@pula-pula, rate:60, alone:10
+2025-11-19 12:07:10, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-19 12:07:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:60
+2025-11-19 12:10:41, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:70, size:69
+2025-11-19 12:14:46, MOVE, v:1, k:poo@pula-pula, mode:BACK
