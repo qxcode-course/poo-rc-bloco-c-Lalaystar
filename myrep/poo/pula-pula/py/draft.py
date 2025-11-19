@@ -29,6 +29,10 @@ class Pula:
     def arrive(self, name: str, age: int):
         self.espera.append(Kid(name, age))
 
+    def enter(self):
+        if self.espera:
+            self.la.append(self.espera.pop(0))
+
     def __str__(self):
         return f"{self.espera} => {self.la}"
 
@@ -41,12 +45,14 @@ def main():
 
         if args[0]=="end":
             break
-        if args[0]=="show":
+        elif args[0]=="show":
             print(pula)
-        if args[0]=="arrive":
+        elif args[0]=="arrive":
             name=args[1]
             age=int(args[2])
             pula.arrive(name,age)
+        elif args[0]=="enter":
+            pula.enter()
 main()
         
    
