@@ -15,3 +15,9 @@
 2025-11-19 12:07:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:60
 2025-11-19 12:10:41, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:70, size:69
 2025-11-19 12:14:46, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-19 20:51:03, SELF, v:1, k:poo@pula-pula, rate:70, iagen:gpt_para_os_erros, guide:aula, alone:10, study:130
+2025-11-19 20:51:12, SELF, v:1, k:poo@pula-pula, rate:70, iagen:gpt_para_os_erros, guide:aula, alone:10, study:130
+2025-11-19 20:51:15, MOVE, v:1, k:poo@cinema, mode:PICK
+2025-11-19 20:51:18, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:0
+2025-11-19 20:51:21, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0
+2025-11-19 22:28:05, MOVE, v:1, k:poo@cinema, mode:BACK
